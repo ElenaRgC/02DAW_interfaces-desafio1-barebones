@@ -40,6 +40,7 @@ img {
 }
 
 a:has(img) {
+    display: block;
     width: fit-content;
 }
 
@@ -68,15 +69,18 @@ h3 {
 
 button {
     border: none;
+    border-radius: 0;
+
     padding: 0.5rem 1.5rem;
-    
     height: 3rem;
+    line-height: normal;
     width: fit-content;
 
     font-size: 1.2rem;
     font-family: "Libre Baskerville", serif;
 
     background-color: var(--color-principal);
+    color: var(--color-texto);
 
     cursor: pointer;
 }
@@ -98,13 +102,16 @@ input[type="search"] {
 }
 
 /* Estilos para el header */
-
 .cabecera {
     background-color: var(--color-acento);
     color: var(--color-fondo);
 
     padding-inline: 5rem;
     line-height: normal;
+}
+
+.cabecera > * {
+    align-items: center;
 }
 
 .logo {
@@ -162,10 +169,13 @@ section {
 /* Estilos de las tarjetas */
 
 .tarjeta {
-    flex: 1;
     text-align: center;
     margin: 1rem auto;
 }
+
+.tarjeta > * {
+    padding-bottom: 1rem;
+} 
 
 .tarjeta a {
     margin: 0 auto;
@@ -192,9 +202,11 @@ footer a {
     color: var(--color-fondo);
 }
 
+footer .copyright span,
 footer .politicas a {
     text-decoration: none;
     display: block;
+    padding-bottom: 0.75rem;
 }
 
 footer .mapa-sitio {
@@ -208,4 +220,8 @@ footer .mapa-sitio {
 
 .mapa-sitio a {
     text-decoration: none;
+}
+
+footer > * {
+    align-items: center;
 }

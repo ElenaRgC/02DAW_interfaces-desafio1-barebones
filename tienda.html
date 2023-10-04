@@ -7,6 +7,9 @@
       src="https://kit.fontawesome.com/fb7c602658.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/barebones.css" />
+    <link rel="stylesheet" href="css/skeleton-legacy.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tienda.css" />
     <title>El Tacón de Oro</title>
@@ -14,159 +17,171 @@
 
   <body>
     <header>
-      <div class="cabecera" id>
-        <img src="img/logo.svg" alt="Logo de El Tacón de Oro" class="logo" />
-        <h1 class="nombre">El Tacón de Oro</h1>
+      <div class="cabecera">
+        <div class="grid-container halves">
+          <img src="img/logo.svg" alt="Logo de El Tacón de Oro" class="logo" />
+          <h1 class="nombre">El Tacón de Oro</h1>
+        </div>
       </div>
       <div class="menu">
-        <input type="search" placeholder="Buscar" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#la-piel">La Piel</a></li>
-            <li><a href="#tiendas">Nuestras Tiendas</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-          </ul>
-        </nav>
+        <div class="grid-container halves">
+          <input type="search" placeholder="Buscar" />
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#la-piel">La Piel</a></li>
+              <li><a href="#tiendas">Nuestras Tiendas</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <div class="navegacion">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
+      <div class="row">
+        <div class="navegacion one column">
+          <nav>
             <ul>
-              <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
-              <li><a href="index.html#productos">Productos</a></li>
-              <li><a href="index.html#la-piel">La Piel</a></li>
-              <li><a href="index.html#tiendas">Nuestras Tiendas</a></li>
+              <li><a href="index.html">Home</a></li>
+              <ul>
+                <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#la-piel">La Piel</a></li>
+                <li><a href="index.html#tiendas">Nuestras Tiendas</a></li>
+              </ul>
+              <li><a href="tienda.html">Tienda</a></li>
+              <ul>
+                <li><a href="tienda.html#calzado">Calzado</a></li>
+                <li><a href="tienda.html#bolsos">Bolsos</a></li>
+                <li><a href="tienda.html#complementos">Complementos</a></li>
+              </ul>
             </ul>
-            <li><a href="tienda.html">Tienda</a></li>
-            <ul>
-              <li><a href="tienda.html#calzado">Calzado</a></li>
-              <li><a href="tienda.html#bolsos">Bolsos</a></li>
-              <li><a href="tienda.html#complementos">Complementos</a></li>
-            </ul>
-          </ul>
-        </nav>
-      </div>
-      <div class="productos">
-        <section class="calzado" id="calzado">
-          <div class="tarjeta">
-            <h2>Botines</h2>
-            <a href="https://unsplash.com/es/fotos/q4ExhrHaSLY"
-              ><img src="img/zapatos1.jpg" alt="Zapatos Elegantes 1"
-            /></a>
-            <p>Cómodos botines de mujer.</p>
-            <span class="precio">99.99 €</span>
-            <button class="comprar">Comprar</button>
-          </div>
-          <div class="tarjeta">
-            <h2>Zapatos</h2>
-            <a href="https://unsplash.com/es/fotos/rsAhe13GHjE"
-              ><img src="img/zapatos2.jpg" alt="Zapatos Elegantes 2"
-            /></a>
-            <p>Zapatos de piel para caballero.</p>
-            <span class="precio">119.99 €</span>
-            <button class="comprar">Comprar</button>
-          </div>
-          <div class="tarjeta">
-            <h2>Botas</h2>
-            <a href="https://unsplash.com/es/fotos/NBSo2C5vmKA"
-              ><img src="img/zapatos3.jpg" alt="Zapatos Elegantes 3"
-            /></a>
-            <p>Resistentes botas de piel para uso diario.</p>
-            <span class="precio">89.99 €</span>
-            <button class="comprar">Comprar</button>
-          </div>
-        </section>
-        <section class="bolsos" id="bolsos">
-          <div class="tarjeta">
-            <h2>Cartera</h2>
-            <a href="https://unsplash.com/es/fotos/qupMxau8t60"
-              ><img src="img/bolso1.jpg" alt="Bolsos de Lujo 1"
-            /></a>
-            <p>Cartera de cuero rosa.</p>
-            <span class="precio">$149.99</span>
-            <button class="comprar">Comprar</button>
-          </div>
-          <div class="tarjeta">
-            <h2>Bolso</h2>
-            <a href="https://unsplash.com/es/fotos/cwAfUnm-GWc"
-              ><img src="img/bolso2.jpg" alt="Bolsos de Lujo 2"
-            /></a>
-            <p>Bolso de piel de gran capacidad.</p>
-            <span class="precio">$169.99</span>
-            <button class="comprar">Comprar</button>
-          </div>
-          <div class="tarjeta">
-            <h2>Bolso</h2>
-            <a href="https://unsplash.com/es/fotos/4o23nx9hH6o"
-              ><img src="img/bolso3.jpg" alt="Bolsos de Lujo 3"
-            /></a>
-            <p>Bolso estampado con cremallera.</p>
-            <span class="precio">$139.99</span>
-            <button class="comprar">Comprar</button>
-          </div>
-        </section>
-        <section class="complementos" id="complementos">
-          <div class="tarjeta">
-            <h2>Guantes</h2>
-            <a href="https://unsplash.com/es/fotos/pC46tfANMEo"
-              ><img src="img/complemento1.jpg" alt="Complementos Versátiles 1"
-            /></a>
-            <p>Resistentes guantes de piel.</p>
-            <span class="precio">$29.99</span>
-            <button class="comprar">Comprar</button>
-          </div>
-          <div class="tarjeta">
-            <h2>Cartera</h2>
-            <a href="https://unsplash.com/es/fotos/3-ZA5uSvJd0"
-              ><img src="img/complemento2.jpg" alt="Complementos Versátiles 2"
-            /></a>
-            <p>Compacta cartera de cuero de caballero.</p>
-            <span class="precio">$39.99</span>
-            <button class="comprar">Comprar</button>
-          </div>
-          <div class="tarjeta">
-            <h2>Monedero</h2>
-            <a href="https://unsplash.com/es/fotos/qk7NWnT8FEo"
-              ><img src="img/complemento3.jpg" alt="Complementos Versátiles 3"
-            /></a>
-            <p>Monedero de mujer con cierre de click.</p>
-            <span class="precio">$34.99</span>
-            <button class="comprar">Comprar</button>
-          </div>
-        </section>
+          </nav>
+        </div>
+        <div class="productos eleven columns">
+          <section class="calzado grid-container thirds" id="calzado">
+            <div class="tarjeta">
+              <h2>Botines</h2>
+              <a href="https://unsplash.com/es/fotos/q4ExhrHaSLY"
+                ><img src="img/zapatos1.jpg" alt="Zapatos Elegantes 1"
+              /></a>
+              <p>Cómodos botines de mujer.</p>
+              <span class="precio">99.99 €</span>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="tarjeta">
+              <h2>Zapatos</h2>
+              <a href="https://unsplash.com/es/fotos/rsAhe13GHjE"
+                ><img src="img/zapatos2.jpg" alt="Zapatos Elegantes 2"
+              /></a>
+              <p>Zapatos de piel para caballero.</p>
+              <span class="precio">119.99 €</span>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="tarjeta">
+              <h2>Botas</h2>
+              <a href="https://unsplash.com/es/fotos/NBSo2C5vmKA"
+                ><img src="img/zapatos3.jpg" alt="Zapatos Elegantes 3"
+              /></a>
+              <p>Resistentes botas de piel para uso diario.</p>
+              <span class="precio">89.99 €</span>
+              <button class="comprar">Comprar</button>
+            </div>
+          </section>
+          <section class="bolsos grid-container thirds" id="bolsos">
+            <div class="tarjeta">
+              <h2>Cartera</h2>
+              <a href="https://unsplash.com/es/fotos/qupMxau8t60"
+                ><img src="img/bolso1.jpg" alt="Bolsos de Lujo 1"
+              /></a>
+              <p>Cartera de cuero rosa.</p>
+              <span class="precio">$149.99</span>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="tarjeta">
+              <h2>Bolso</h2>
+              <a href="https://unsplash.com/es/fotos/cwAfUnm-GWc"
+                ><img src="img/bolso2.jpg" alt="Bolsos de Lujo 2"
+              /></a>
+              <p>Bolso de piel de gran capacidad.</p>
+              <span class="precio">$169.99</span>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="tarjeta">
+              <h2>Bolso</h2>
+              <a href="https://unsplash.com/es/fotos/4o23nx9hH6o"
+                ><img src="img/bolso3.jpg" alt="Bolsos de Lujo 3"
+              /></a>
+              <p>Bolso estampado con cremallera.</p>
+              <span class="precio">$139.99</span>
+              <button class="comprar">Comprar</button>
+            </div>
+          </section>
+          <section class="complementos grid-container thirds" id="complementos">
+            <div class="tarjeta">
+              <h2>Guantes</h2>
+              <a href="https://unsplash.com/es/fotos/pC46tfANMEo"
+                ><img
+                  src="img/complemento1.jpg"
+                  alt="Complementos Versátiles 1"
+              /></a>
+              <p>Resistentes guantes de piel.</p>
+              <span class="precio">$29.99</span>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="tarjeta">
+              <h2>Cartera</h2>
+              <a href="https://unsplash.com/es/fotos/3-ZA5uSvJd0"
+                ><img
+                  src="img/complemento2.jpg"
+                  alt="Complementos Versátiles 2"
+              /></a>
+              <p>Compacta cartera de cuero de caballero.</p>
+              <span class="precio">$39.99</span>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="tarjeta">
+              <h2>Monedero</h2>
+              <a href="https://unsplash.com/es/fotos/qk7NWnT8FEo"
+                ><img
+                  src="img/complemento3.jpg"
+                  alt="Complementos Versátiles 3"
+              /></a>
+              <p>Monedero de mujer con cierre de click.</p>
+              <span class="precio">$34.99</span>
+              <button class="comprar">Comprar</button>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
 
     <footer>
-      <div class="copyright">
-        <span>&copy; 2023 Elena Rodríguez Calderón</span><br />
-        <span>Imágenes: <a href="https://unsplash.com">Unsplash</a></span>
-      </div>
-
-      <div class="politicas">
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Política de Cookies</a>
-      </div>
-
-      <div class="mapa-sitio">
-        <h3>Mapa del Sitio</h3>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="index.html#productos">Productos</a></li>
-            <li><a href="index.html#la-piel">La Piel</a></li>
-            <li><a href="index.html#tiendas">Nuestras Tiendas</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-          </ul>
-        </nav>
+      <div class="grid-container thirds">
+        <div class="copyright">
+          <span>&copy; 2023 Elena Rodríguez Calderón</span><br />
+          <span>Imágenes: <a href="https://unsplash.com">Unsplash</a></span>
+        </div>
+        <div class="politicas">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+        <div class="mapa-sitio">
+          <h3>Mapa del Sitio</h3>
+          <nav>
+            <ul class="grid-container thirds">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+              <li><a href="index.html#productos">Productos</a></li>
+              <li><a href="index.html#la-piel">La Piel</a></li>
+              <li><a href="index.html#tiendas">Nuestras Tiendas</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
   </body>

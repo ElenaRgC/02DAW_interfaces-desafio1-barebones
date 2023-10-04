@@ -9,6 +9,7 @@
     ></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/barebones.css" />
+    <link rel="stylesheet" href="css/skeleton-legacy.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>El Tacón de Oro</title>
@@ -17,141 +18,153 @@
   <body>
     <header>
       <div class="cabecera">
-        <img src="img/logo.svg" alt="Logo de El Tacón de Oro" class="logo" />
-        <h1 class="nombre">El Tacón de Oro</h1>
+        <div class="grid-container halves">
+          <img src="img/logo.svg" alt="Logo de El Tacón de Oro" class="logo" />
+          <h1 class="nombre">El Tacón de Oro</h1>
+        </div>
       </div>
       <div class="menu">
-        <input type="search" placeholder="Buscar" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#la-piel">La Piel</a></li>
-            <li><a href="#tiendas">Nuestras Tiendas</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-          </ul>
-        </nav>
+        <div class="grid-container halves">
+          <input type="search" placeholder="Buscar" />
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#la-piel">La Piel</a></li>
+              <li><a href="#tiendas">Nuestras Tiendas</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="sobre-nosotros" id="sobre-nosotros">
-        <div>
-          <h1>Sobre Nosotros</h1>
-          <p>
-            Nacidos de un negocio familiar, seguimos trabajando nuestros
-            productos artesanalmente.
-          </p>
-          <button>Saber más</button>
+        <div class="grid-container halves">
+          <div>
+            <h1>Sobre Nosotros</h1>
+            <p>
+              Nacidos de un negocio familiar, seguimos trabajando nuestros
+              productos artesanalmente.
+            </p>
+            <button>Saber más</button>
+          </div>
+          <a href="https://unsplash.com/es/fotos/JYIoO7xysAU"
+            ><img
+              src="img/sobre-nosotros.jpg"
+              alt="Manos de un artesano trabajando con un hilo de cuero."
+          /></a>
         </div>
-        <a href="https://unsplash.com/es/fotos/JYIoO7xysAU"
-          ><img
-            src="img/sobre-nosotros.jpg"
-            alt="Manos de un artesano trabajando con un hilo de cuero."
-        /></a>
       </section>
 
       <section class="productos" id="productos">
-        <div class="tarjeta">
-          <h2>Zapatos</h2>
-          <a href="https://unsplash.com/es/fotos/QLPWQvHvmII"
-            ><img
-              src="img/zapatos.jpg"
-              alt="Fotografía de unas botas de cuero marrón, una persona está atándose los cordones de una bota."
-          /></a>
-          <p>Zapatos de piel que combinan elegancia y comodidad.</p>
-          <a href="tienda.html#calzado"><button>Ver más</button></a>
-        </div>
-        <div class="tarjeta">
-          <h2>Bolsos</h2>
-          <a href="https://unsplash.com/es/fotos/1QZYZib7eYs"
-            ><img
-              src="img/bandolera.jpg"
-              alt="Fotografía de una cartera de cuero marrón con cierres metálicos, colgando de una persona de espaldas a la que no se ve completamente."
-          /></a>
-          <p>Bolsos de piel que reflejan estilo y calidad.</p>
-          <a href="tienda.html#bolsos"><button>Ver más</button></a>
-        </div>
-        <div class="tarjeta">
-          <h2>Complementos</h2>
-          <a href="https://unsplash.com/es/fotos/KhpPdaFGQvY"
-            ><img
-              src="img/cinturon.jpg"
-              alt="Foto de cerca de un cinturón de cuero marrón abrochado."
-          /></a>
-          <p>Complementos de piel para un estilo sofisticado.</p>
-          <a href="tienda.html#complemetos"><button>Ver más</button></a>
+        <div class="grid-container thirds">
+          <div class="tarjeta">
+            <h2>Zapatos</h2>
+            <a href="https://unsplash.com/es/fotos/QLPWQvHvmII"
+              ><img
+                src="img/zapatos.jpg"
+                alt="Fotografía de unas botas de cuero marrón, una persona está atándose los cordones de una bota."
+            /></a>
+            <p>Zapatos de piel que combinan elegancia y comodidad.</p>
+            <a href="tienda.html#calzado"><button>Ver más</button></a>
+          </div>
+          <div class="tarjeta">
+            <h2>Bolsos</h2>
+            <a href="https://unsplash.com/es/fotos/1QZYZib7eYs"
+              ><img
+                src="img/bandolera.jpg"
+                alt="Fotografía de una cartera de cuero marrón con cierres metálicos, colgando de una persona de espaldas a la que no se ve completamente."
+            /></a>
+            <p>Bolsos de piel que reflejan estilo y calidad.</p>
+            <a href="tienda.html#bolsos"><button>Ver más</button></a>
+          </div>
+          <div class="tarjeta">
+            <h2>Complementos</h2>
+            <a href="https://unsplash.com/es/fotos/KhpPdaFGQvY"
+              ><img
+                src="img/cinturon.jpg"
+                alt="Foto de cerca de un cinturón de cuero marrón abrochado."
+            /></a>
+            <p>Complementos de piel para un estilo sofisticado.</p>
+            <a href="tienda.html#complemetos"><button>Ver más</button></a>
+          </div>
         </div>
       </section>
 
-      <section class="la-piel" id="la-piel">
-        <a
-          href="https://www.freepik.com/free-photo/close-up-cobbler-working-with-leather-textile_7573202.htm"
-        >
-          <img
-            src="img/la-piel.jpg"
-            alt="Varias pieles sobre una mesa de trabajo, las manos de un peletero la sostienen."
-          />
-        </a>
-        <h2>La Piel</h2>
-        <p>
-          Nuestra piel proviene de <strong>fuentes sostenibles</strong>,
-          seleccionadas cuidadosamente para garantizar la calidad y la
-          responsabilidad ambiental. Cada pieza de piel es tratada
-          artesanalmente por <strong>expertos artesanos</strong>, lo que asegura
-          que nuestros productos estén hechos con atención al detalle y con los
-          más altos estándares de calidad.
-        </p>
-        <p>
-          En <strong>El Tacón de Oro</strong>, nos enorgullece ofrecer la mejor
-          calidad en cada uno de nuestros productos de piel.
-        </p>
-        <a href="tienda.html"><button>Visita nuestra tienda</button></a>
+      <section class="la-piel row" id="la-piel">
+        <div class="twelve columns">
+          <a
+            href="https://www.freepik.com/free-photo/close-up-cobbler-working-with-leather-textile_7573202.htm"
+          >
+            <img
+              src="img/la-piel.jpg"
+              alt="Varias pieles sobre una mesa de trabajo, las manos de un peletero la sostienen."
+            />
+          </a>
+          <h2>La Piel</h2>
+          <p>
+            Nuestra piel proviene de <strong>fuentes sostenibles</strong>,
+            seleccionadas cuidadosamente para garantizar la calidad y la
+            responsabilidad ambiental. Cada pieza de piel es tratada
+            artesanalmente por <strong>expertos artesanos</strong>, lo que
+            asegura que nuestros productos estén hechos con atención al detalle
+            y con los más altos estándares de calidad.
+          </p>
+          <p>
+            En <strong>El Tacón de Oro</strong>, nos enorgullece ofrecer la
+            mejor calidad en cada uno de nuestros productos de piel.
+          </p>
+          <a href="tienda.html"><button>Visita nuestra tienda</button></a>
+        </div>
       </section>
 
       <section class="tiendas" id="tiendas">
-        <div class="mapa">
-          <iframe
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Paseo%20San%20Gregorio,%20Puertollano+(El%20Tac%C3%B3n%20de%20Oro)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          ></iframe>
-        </div>
-        <div>
-          <h2>Nuestras Tiendas</h2>
-          <p>Encuentra nuestras tiendas cerca de ti.</p>
-          <input type="search" placeholder="Buscar tiendas" />
-          <button>Buscar</button>
+        <div class="grid-container halves">
+          <div class="mapa">
+            <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Paseo%20San%20Gregorio,%20Puertollano+(El%20Tac%C3%B3n%20de%20Oro)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+          <div>
+            <h2>Nuestras Tiendas</h2>
+            <p>Encuentra nuestras tiendas cerca de ti.</p>
+            <input type="search" placeholder="Buscar tiendas" />
+            <button>Buscar</button>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="copyright">
-        <span>&copy; 2023 Elena Rodríguez Calderón</span><br />
-        <span>Imágenes: <a href="https://unsplash.com">Unsplash</a></span>
-      </div>
-
-      <div class="politicas">
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Política de Cookies</a>
-      </div>
-
-      <div class="mapa-sitio">
-        <h3>Mapa del Sitio</h3>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="index.html#productos">Productos</a></li>
-            <li><a href="index.html#la-piel">La Piel</a></li>
-            <li><a href="index.html#tiendas">Nuestras Tiendas</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-          </ul>
-        </nav>
+      <div class="grid-container thirds">
+        <div class="copyright">
+          <span>&copy; 2023 Elena Rodríguez Calderón</span><br />
+          <span>Imágenes: <a href="https://unsplash.com">Unsplash</a></span>
+        </div>
+        <div class="politicas">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+        <div class="mapa-sitio">
+          <h3>Mapa del Sitio</h3>
+          <nav>
+            <ul class="grid-container thirds">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+              <li><a href="index.html#productos">Productos</a></li>
+              <li><a href="index.html#la-piel">La Piel</a></li>
+              <li><a href="index.html#tiendas">Nuestras Tiendas</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
   </body>

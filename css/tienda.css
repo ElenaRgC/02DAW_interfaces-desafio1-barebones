@@ -17,17 +17,18 @@ section p {
 .precio {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+
+    display: block;
 }
 
 /* Estilos de la navegación */
 
 .navegacion {
+    padding-top: 3.5rem;
     align-self: start;
 
     position: sticky;
     top: 0;
-
-    margin-left: -5rem;
 }
 
 .navegacion ul {
