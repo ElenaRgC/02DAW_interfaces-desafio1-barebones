@@ -1,0 +1,60 @@
+/* Estilos del main */
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    position: relative;
+}
+
+/* Estilos de los productos */
+
+section {
+    margin-left: 10rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+section img {
+    object-position: bottom;
+}
+
+section p {
+    padding: 0.5rem;
+}
+
+.precio {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Estilos de la navegación */
+
+.navegacion {
+    align-self: start;
+
+    position: sticky;
+    top: 0;
+
+    margin-left: -5rem;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navegacion ul li {
+    margin-bottom: 10px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    display: block;
+
+    color: var(--color-texto);
+}
+
+ul ul {
+    margin-left: 2rem;
+}

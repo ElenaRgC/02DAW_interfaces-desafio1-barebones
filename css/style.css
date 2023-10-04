@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+    --color-fondo: #f9fafb;
+    --color-principal: #ffcdb3;
+    --color-secundario: #f5f2d6;
+    --color-acento: #600b15;
+    --color-texto: #1a281f;
+}
+
+/* Estilos globales */
+
+* {
+    box-sizing: border-box;
+
+}
+
+:target {
+    margin-top: 2rem;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.6rem;
+
+    font-family: "Libre Baskerville", serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a:has(img) {
+    width: fit-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.45rem;
+}
+
+h2 {
+    font-size: 1.95rem;
+    line-height: 2.2rem;
+}
+
+h3 {
+    font-size: 1.55rem;
+}
+
+button {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    
+    height: 3rem;
+    width: fit-content;
+
+    font-size: 1.2rem;
+    font-family: "Libre Baskerville", serif;
+
+    background-color: var(--color-principal);
+
+    cursor: pointer;
+}
+
+button.secundario {
+    background-color: var(--color-secundario);
+}
+
+input[type="search"] {
+    height: 3rem;
+    padding-left: 2.5rem;
+
+    background-color: white;
+    background-image: url("../img/icono-lupa.svg");
+    background-size: 1.5rem;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+
+}
+
+/* Estilos para el header */
+
+header > * {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecera {
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+
+    padding-inline: 5rem;
+    line-height: normal;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.menu {
+    width: 98%;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    background-color: rgb(238, 238, 238);
+    box-shadow: #ccc 2px 2px 5px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li::after {
+    content: " |";
+    padding-inline: 0.75rem;
+
+    opacity: 0.5;
+}
+
+.menu li:last-child::after {
+    content: "";
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+/* Estilos del main */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin-block: 4rem;
+}
+
+/* Estilos de las tarjetas */
+
+.tarjeta {
+    flex: 1;
+    text-align: center;
+    margin: 1rem auto;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta a {
+    margin: 0 auto;
+}
+
+.tarjeta img {
+    max-width: 250px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.tarjeta p {
+    height: 3rem;
+}
+
+.tarjeta button {
+    margin: 0 auto;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: var(--color-fondo);
+}
+
+footer .politicas a {
+    text-decoration: none;
+    display: block;
+}
+
+footer .mapa-sitio {
+    text-align: center;
+
+    flex-basis: 40%;
+}
+
+.mapa-sitio ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.mapa-sitio a {
+    text-decoration: none;
+}
