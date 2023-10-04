@@ -1,18 +1,9 @@
 /* Estilos del main */
-main {
-    display: grid;
-    grid-template-columns: auto auto;
-
-    position: relative;
-}
 
 /* Estilos de los productos */
 
 section {
     margin-left: 10rem;
-
-    display: flex;
-    justify-content: space-around;
 }
 
 section img {

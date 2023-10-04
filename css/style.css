@@ -99,11 +99,6 @@ input[type="search"] {
 
 /* Estilos para el header */
 
-header > * {
-    display: flex;
-    justify-content: space-between;
-}
-
 .cabecera {
     background-color: var(--color-acento);
     color: var(--color-fondo);
@@ -122,8 +117,6 @@ nav ul {
 }
 
 .menu {
-    width: 98%;
-    margin: 0 auto;
     padding: 0.5rem 2rem;
 
     font-size: 1.2rem;
@@ -131,8 +124,6 @@ nav ul {
     font-family: "Playfair Display";
     font-weight: bold;
 
-    display: grid;
-    grid-template-columns: auto auto;
     align-items: center;
 
     background-color: rgb(238, 238, 238);
@@ -164,11 +155,6 @@ nav ul {
 
 /* Estilos del main */
 
-main {
-    width: 80%;
-    margin: 0 auto;
-}
-
 section {
     margin-block: 4rem;
 }
@@ -179,10 +165,6 @@ section {
     flex: 1;
     text-align: center;
     margin: 1rem auto;
-
-    display: grid;
-    justify-content: center;
-    align-items: center;
 }
 
 .tarjeta a {
@@ -199,19 +181,11 @@ section {
     height: 3rem;
 }
 
-.tarjeta button {
-    margin: 0 auto;
-}
-
 /* Estilos para el footer */
 footer {
     background-color: var(--color-acento);
     color: var(--color-fondo);
     text-align: center;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 footer a {
@@ -225,16 +199,11 @@ footer .politicas a {
 
 footer .mapa-sitio {
     text-align: center;
-
-    flex-basis: 40%;
 }
 
 .mapa-sitio ul {
     list-style-type: none;
     padding: 0;
-
-    display: grid;
-    grid-template-columns: auto auto auto;
 }
 
 .mapa-sitio a {

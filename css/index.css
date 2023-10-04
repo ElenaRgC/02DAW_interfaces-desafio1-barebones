@@ -1,8 +1,5 @@
 /* Estilos para la sección "Sobre Nosotros" */
 .sobre-nosotros {
-    display: flex;
-    gap: 2rem;
-
     align-items: center;
 }
 
@@ -11,10 +8,7 @@
 }
 
 /* Estilos para la sección "Productos" */
-.productos {
-    display: flex;
-    justify-content: space-around;
-}
+
 
 /* Estilos para la sección "La Piel" */
 .la-piel {
@@ -34,22 +28,10 @@
 }
 
 /* Estilos para la sección "Tiendas" */
-.tiendas {
-    display: flex;
-    justify-content: space-around;
-}
-
-.tiendas .mapa {
-    width: 60%;
-}
 
 .tiendas iframe {
     width: 100%;
     height: 100%;
-}
-
-.tiendas div {
-    width: 20%;
 }
 
 .tiendas button {
