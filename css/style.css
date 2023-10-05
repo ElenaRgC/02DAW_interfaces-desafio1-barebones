@@ -1,47 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@400;700&display=swap");
 
 :root {
-    --color-fondo: #f9fafb;
-    --color-principal: #ffcdb3;
-    --color-secundario: #f5f2d6;
-    --color-acento: #600b15;
-    --color-texto: #1a281f;
+  --color-fondo: #f9fafb;
+  --color-acento: #600b15;
+  --color-menu: #eee;
+  --color-texto: #1a281f;
 }
 
 /* Estilos globales */
 
 * {
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
 
 :target {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-html, body {
-    scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: smooth;
 }
-
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    line-height: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.6rem;
 
-    font-family: "Libre Baskerville", serif;
-    color: var(--color-texto);
-    background-color: var(--color-fondo);
+  font-family: "Libre Baskerville", serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
 }
 
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 a:has(img) {
-    display: block;
-    width: fit-content;
+  display: block;
+  width: fit-content;
 }
 
 h1,
@@ -50,178 +48,173 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 
 h1 {
-    font-size: 2.45rem;
+  font-size: 2.45rem;
 }
 
 h2 {
-    font-size: 1.95rem;
-    line-height: 2.2rem;
+  font-size: 1.95rem;
+  line-height: 2.2rem;
 }
 
 h3 {
-    font-size: 1.55rem;
+  font-size: 1.55rem;
 }
 
 button {
-    border: none;
-    border-radius: 0;
+  border: none;
+  border-radius: 0;
 
-    padding: 0.5rem 1.5rem;
-    height: 3rem;
-    line-height: normal;
-    width: fit-content;
+  padding: 0.5rem 1.5rem;
+  height: 3rem;
+  line-height: normal;
+  width: fit-content;
 
-    font-size: 1.2rem;
-    font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
+  font-family: "Libre Baskerville", serif;
 
-    background-color: var(--color-principal);
-    color: var(--color-texto);
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
 
-    cursor: pointer;
-}
-
-button.secundario {
-    background-color: var(--color-secundario);
+  cursor: pointer;
 }
 
 input[type="search"] {
-    height: 3rem;
-    padding-left: 2.5rem;
+  height: 3rem;
+  padding-left: 2.5rem;
 
-    background-color: white;
-    background-image: url("../img/icono-lupa.svg");
-    background-size: 1.5rem;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-
+  background-color: white;
+  background-image: url("../img/icono-lupa.svg");
+  background-size: 1.5rem;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
 }
 
 /* Estilos para el header */
 .cabecera {
-    background-color: var(--color-acento);
-    color: var(--color-fondo);
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
 
-    padding-inline: 5rem;
-    line-height: normal;
+  padding-inline: 5rem;
+  line-height: normal;
 }
 
 .cabecera > * {
-    align-items: center;
+  align-items: center;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .menu {
-    padding: 0.5rem 2rem;
+  padding: 0.5rem 2rem;
 
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-family: "Playfair Display";
-    font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-weight: bold;
 
-    align-items: center;
+  align-items: center;
 
-    background-color: rgb(238, 238, 238);
-    box-shadow: #ccc 2px 2px 5px;
+  background-color: var(--color-menu);
+  box-shadow: #ccc 2px 2px 5px;
 
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .menu li {
-    display: inline;
+  display: inline;
 }
 
 .menu li::after {
-    content: " |";
-    padding-inline: 0.75rem;
+  content: " |";
+  padding-inline: 0.75rem;
 
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .menu li:last-child::after {
-    content: "";
+  content: "";
 }
 
 .menu a {
-    text-decoration: none;
-    color: var(--color-texto);
+  text-decoration: none;
+  color: var(--color-texto);
 }
 
 /* Estilos del main */
 
 section {
-    margin-block: 4rem;
+  margin-block: 4rem;
 }
 
 /* Estilos de las tarjetas */
 
 .tarjeta {
-    text-align: center;
-    margin: 1rem auto;
+  text-align: center;
+  margin: 1rem auto;
 }
 
 .tarjeta > * {
-    padding-bottom: 1rem;
-} 
+  padding-bottom: 1rem;
+}
 
 .tarjeta a {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .tarjeta img {
-    max-width: 250px;
-    object-fit: cover;
-    aspect-ratio: 1;
+  max-width: 250px;
+  object-fit: cover;
+  aspect-ratio: 1;
 }
 
 .tarjeta p {
-    height: 3rem;
+  height: 3rem;
 }
 
 /* Estilos para el footer */
 footer {
-    background-color: var(--color-acento);
-    color: var(--color-fondo);
-    text-align: center;
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+  text-align: center;
 }
 
 footer a {
-    color: var(--color-fondo);
+  color: var(--color-fondo);
 }
 
 footer .copyright span,
 footer .politicas a {
-    text-decoration: none;
-    display: block;
-    padding-bottom: 0.75rem;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 0.75rem;
 }
 
 footer .mapa-sitio {
-    text-align: center;
+  text-align: center;
 }
 
 .mapa-sitio ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .mapa-sitio a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer > * {
-    align-items: center;
+  align-items: center;
 }
